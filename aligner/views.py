@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 def home(request):
     context = {}
-    if request.method = 'POST':
+    if request.method == 'POST':
         seq1 = request.POST.get('sequence 1', '').strip()
         seq2 = request.POST.get('sequence 2', '').strip()
         context['seq1'] = seq1
