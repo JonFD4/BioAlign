@@ -14,10 +14,16 @@
         <div class="mb-3">
             <label for="sequence1" class="form-label">Sequence 1</label>
             <textarea class="form-control" id="sequence1" name="sequence1" rows="4" required>{{ seq1 }}</textarea>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">               
+            </form>
         </div>
         <div class="mb-3">
             <label for="sequence2" class="form-label">Sequence 2</label>
             <textarea class="form-control" id="sequence2" name="sequence2" rows="4" required>{{ seq2 }}</textarea>
+            <form action="/action_page.php">
+                <input type="file" id="myFile" name="filename">               
+            </form>
         </div>
 
         <button type="submit" class="btn btn-primary">Align</button>
